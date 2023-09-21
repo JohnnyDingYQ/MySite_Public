@@ -1,0 +1,38 @@
+@use "base"
+
+.container
+  height: 5rem
+  width: 100%
+  background-color: base.$platinum
+  display: flex
+  align-items: center
+  padding: 1rem
+
+  +base.respond-to($min-width:small)
+    height: 6rem
+
+  a:first-of-type
+    height: 100%
+  
+  .nav_logo
+    height: 100%
+    width: auto
+  
+  .github_link
+    margin-left: auto
+    
+    img
+      margin-right: 0.5rem
+      margin-top: -0.5rem
+
+    span
+      display: none
+      +base.respond-to($min-width: small)
+        display: inline-block
+      
+  
+  .nav_link
+    color: base.$black-olive
+    padding: 0 1.5rem
+    font-weight: bold
+    
